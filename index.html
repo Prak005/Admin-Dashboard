@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 <img src="/images/sidebar/account-group.svg" class="sidebar-svg">
                 Communities
             </a>
-            <a href="" class="sidebar-content" id="sidebar-gap">
+            <a href="" class="sidebar-content" id="sidebar-gap-bottom">
                 <img src="images/sidebar/cog.svg" class="sidebar-svg">
                 Settings
             </a>
@@ -54,39 +54,163 @@
         </div>
         <div class="header">
             <div class="header-top">
-                <a class="search-icon" href=""><img class="search" src="/images/magnify.svg"></a>
-                <input class="search-field">
-                <a class="notif-icon" href=""><img class="notif" src="/images/bell-ring.svg"></a>
-                <img src="/images/pfps/pfp1.png" alt="pic">
-                <div class="admin-name">Prakhar Mallick</div>
+                <div class="search-bar">
+                    <img class="search" src="/images/magnify.svg">
+                    <input class="search-field" type="search">
+                </div>
+                <div class="user-info">
+                    <img class="notif" src="/images/bell-ring.svg">
+                    <img src="/images/pfps/pfp1.png" alt="pic" class="pfp-small">
+                    <div class="admin-name">Prakhar Mallick</div>
+                </div>
             </div>
             <div class="header-bottom">
-                <img src="/images/pfps/pfp1.png" alt="pic">
-                <div class="intro">Hi there,
-                    <p class="profile-links">Prakhar Mallick (@prak005)</p>
+                <div class="user-greeting">
+                    <img src="/images/pfps/pfp1.png" alt="pic" class="pfp-large">
+                    <div class="intro">
+                        <p class="hi">Hi there,</p>
+                        <p class="profile-links">Prakhar Mallick (@prak005)</p>
+                    </div>
                 </div>
-                <a class="header-button" href=""><button>New</button></a>
-                <a class="header-button" href=""><button>Upload</button></a>
-                <a class="header-button" href=""><button>Share</button></a>
+                <div class="header-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </div>
         <div class="main-content">
-            <div class="project-cards">
+            <div class="projects-container">
                 <div class="title">Your Projects</div>
-                <div class="card1" id="cards"></div>
-                <div class="card2" id="cards"></div>
-                <div class="card3" id="cards"></div>
-                <div class="card4" id="cards"></div>
-                <div class="card5" id="cards"></div>
-                <div class="card6" id="cards"></div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Super Cool Project</h3>
+                            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                felis accumsan nec.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/star-plus-outline.svg" alt="Favorite">
+                            <img src="/images/eye-plus-outline.svg" alt="Watch">
+                            <img src="/images/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Less Cool Project</h3>
+                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt,
+                                consectetur sapien et, facilisis dolor.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/star-plus-outline.svg" alt="Favorite">
+                            <img src="/images/eye-plus-outline.svg" alt="Watch">
+                            <img src="/images/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Impossible App</h3>
+                            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis
+                                id.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/star-plus-outline.svg" alt="Favorite">
+                            <img src="/images/eye-plus-outline.svg" alt="Watch">
+                            <img src="/images/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Easy Peasy App</h3>
+                            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan
+                                aliquam. Curabitur dignissim nisi in tortor commodo.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/star-plus-outline.svg" alt="Favorite">
+                            <img src="/images/eye-plus-outline.svg" alt="Watch">
+                            <img src="/images/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Ad Blocker</h3>
+                            <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit
+                                felis. Aliquam sed malesuada eros.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/star-plus-outline.svg" alt="Favorite">
+                            <img src="/images/eye-plus-outline.svg" alt="Watch">
+                            <img src="/images/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3>Money Maker</h3>
+                            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac
+                                scelerisque tortor purus sit amet ex.</p>
+                        </div>
+                        <div class="card-icons">
+                            <img src="images/star-plus-outline.svg" alt="Favorite">
+                            <img src="/images/eye-plus-outline.svg" alt="Watch">
+                            <img src="/images/source-fork.svg" alt="Fork">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="announcements">
-                Announcements
-                <div class="announcement-card"></div>
-            </div>
-            <div class="trending">
-                Trending
-                <div class="trending-card"></div>
+            <div class="sidebar-right">
+                <div class="announcements">
+                    <div class="title">Announcements</div>
+                    <div class="announcement-card">
+                        <div class="announcement-item">
+                            <h4>Site Maintenance</h4>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales
+                                congue...</p>
+                        </div>
+                        <div class="announcement-item">
+                            <h4>Community Share Day</h4>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan
+                                porttitor...</p>
+                        </div>
+                        <div class="announcement-item">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras
+                                fringilla sagittis sem in mattis...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <div class="title">Trending</div>
+                    <div class="trending-card">
+                        <div class="trending-item">
+                            <img src="/images/pfps/pfp2.jpg" alt="pfp" class="pfp-small">
+                            <div class="trending-text">
+                                <p>@tegan</p>
+                                <p class="project-name">World Peace Builder</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="/images/pfps/pfp1.png" alt="pfp" class="pfp-small">
+                            <div class="trending-text">
+                                <p>@prak005</p>
+                                <p class="project-name">Super Cool Project</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="/images/pfps/pfp3.png" alt="pfp" class="pfp-small">
+                            <div class="trending-text">
+                                <p>@kendall</p>
+                                <p class="project-name">Life Changing App</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="/images/pfps/pfp2.jpg" alt="pfp" class="pfp-small">
+                            <div class="trending-text">
+                                <p>@alex</p>
+                                <p class="project-name">No Traffic Maker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
